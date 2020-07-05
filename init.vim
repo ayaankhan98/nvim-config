@@ -17,15 +17,25 @@ Plug 'sjl/gundo.vim'
 Plug 'spolu/dwm.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'sbdchd/neoformat'
-
+Plug 'ctrlpvim/ctrlp.vim'
+Plug'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'vim-syntastic/syntastic'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-easytags'
+Plug 'majutsushi/tagbar'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'vim-scripts/a.vim'
 " let g:neoformat_enabled_cpp = ['clang-format']
 " let g:neoformat_enabled_cmake = ['cmake-format']
 
 Plug 'scrooloose/nerdcommenter'
-
-Plug 'Valloric/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
 
+" for flutter development
+Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 call plug#end()
 
 syntax on
@@ -60,7 +70,7 @@ set spell spelllang=en_us
 set spellcapcheck=""
 set signcolumn=yes
 
-let g:ycm_confirm_extra_conf = 0
+"let g:ycm_confirm_extra_conf = 0
 let g:airline_powerline_fonts=1
 let g:rbpt_max = 16
 let g:rbpt_loadcmd_toggle = 0
@@ -110,6 +120,7 @@ set backup
 nnoremap <F5> :!g++ % -std=c++17<Enter>
 nnoremap <F1> :!./a.out
 map <F7> gg=G<C-o><C-o>
+map <F6> :NERDTreeToggle<CR>
 "nnoremap <F5> :!g++ -o %:r.out % -std=c++17<Enter>
 "nnoremap <F1> :!./%:r.out
 
