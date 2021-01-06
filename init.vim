@@ -22,13 +22,14 @@ Plug'scrooloose/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'vim-syntastic/syntastic'
 Plug 'xolox/vim-misc'
-Plug 'xolox/vim-easytags'
+" Plug 'xolox/vim-easytags'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-scripts/a.vim'
 " let g:neoformat_enabled_cpp = ['clang-format']
 " let g:neoformat_enabled_cmake = ['cmake-format']
 
+Plug 'liuchengxu/space-vim-dark'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-syntastic/syntastic'
@@ -69,7 +70,7 @@ set undofile
 set spell spelllang=en_us
 set spellcapcheck=""
 set signcolumn=yes
-
+set relativenumber
 "let g:ycm_confirm_extra_conf = 0
 let g:airline_powerline_fonts=1
 let g:rbpt_max = 16
