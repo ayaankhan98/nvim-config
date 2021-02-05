@@ -117,9 +117,9 @@ au Syntax * RainbowParenthesesLoadBraces
 set backup
 
 " key mapping for cpp compilation
-
-nnoremap <F5> :!g++ % -std=c++17<Enter>
+nnoremap <F5> :!g++ % -Wall -Werror -std=c++17 -fsanitize=address -fsanitize=leak -fsanitize=undefined -fsanitize=null -fsanitize=vla-bound -fsanitize=return -fsanitize=bounds -g<Enter>
 nnoremap <F1> :!./a.out
+nnoremap <F2> :!cat output.txt
 map <F7> gg=G<C-o><C-o>
 map <F6> :NERDTreeToggle<CR>
 "nnoremap <F5> :!g++ -o %:r.out % -std=c++17<Enter>
