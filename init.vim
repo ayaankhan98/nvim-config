@@ -71,6 +71,7 @@ set spell spelllang=en_us
 set spellcapcheck=""
 set signcolumn=yes
 set relativenumber
+set mouse=a
 "let g:ycm_confirm_extra_conf = 0
 let g:airline_powerline_fonts=1
 let g:rbpt_max = 16
@@ -103,9 +104,9 @@ set laststatus=2
 set termguicolors
 
 autocmd BufReadPost *
-    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-    \   exe "normal! g`\"" |
-    \ endif
+      \ if line("'\"") > 1 && line("'\"") <= line("$") |
+      \   exe "normal! g`\"" |
+      \ endif
 
 au VimEnter * RainbowParenthesesActivate
 " Round disabled for CMakeLists.txt support...
