@@ -56,6 +56,7 @@ set title
 set showcmd
 set autoindent
 set smartindent
+set clipboard+=unnamedplus
 
 let g:doxygen_enhanced_color=1
 let g:load_doxygen_syntax=1
